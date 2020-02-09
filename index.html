@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="keywords" content="Monticello"/>
+    <meta name="description" content="Monticello"/>
+    <title>Monticello</title>
+    <link rel="stylesheet" href="css/libs.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
+  </head>
+  <body>
+    <div id="parent_popup">
+      <div id="popup" class="form">
+        <div id="popup_close"><i class="fas fa-times"></i>
+        </div>
+        <div id="popup_main">
+          <h3>Request <br/>a call</h3>
+          <form name="order" action="sender.php" method="post">
+            <input type="text" name="name1" placeholder="Name" class="contacts__input"/>
+            <input type="tel" required="required" name="phone1" placeholder="Phone" class="contacts__input"/>
+            <div class="effect contacts__submit">
+              <input type="submit" name="submit1" value="Send" class="button"/>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="right-menu"><a href="#main" class="right-menu__link"></a><a href="#projects" class="right-menu__link"></a><a href="#news" class="right-menu__link"></a><a href="#gallery" class="right-menu__link"></a><a href="#contact" class="right-menu__link"></a></div>
+    <header id="main" class="header js-header">
+      <div class="container header__wrapper"><a href="/" class="logo"><img src="img/logo.svg" alt="Logo"/></a>
+        <menu class="menu js-nav">
+          <li class="menu__item"><a href="#projects" class="menu__link">Projects</a></li>
+          <li class="menu__item"><a href="#news" class="menu__link">News</a></li>
+          <li class="menu__item"><a href="#gallery" class="menu__link">Gallery</a></li>
+          <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
+        </menu>
+        <div class="social"><a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a><a href="#" class="social__link"><i class="fab fa-twitter"></i></a><a href="#" class="social__link"><i class="fab fa-instagram"></i></a></div>
+        <div class="toggler">
+          <div class="toggler-icon js-nav-toggle"><span class="toggler-line"></span></div>
+        </div>
+      </div>
+    </header>
+    <section class="section section__slider">
+      <div class="main-slider owl-carousel owl-theme js-carousel-1">
+        <div class="main-slider__item main-slider__item--slide1">
+          <h1 data-wow-delay="0.7s" class="main-slider__title wow fadeInUp">Simple & modern</h1>
+          <h2 class="main-slider__subtitle">We make the world's beautiful every day</h2>
+        </div>
+        <div class="main-slider__item main-slider__item--slide2">
+          <h1 data-wow-delay="0.7s" class="main-slider__title wow fadeInUp"> Easy & functional</h1>
+          <h2 class="main-slider__subtitle">We make the world's beautiful every day</h2>
+        </div>
+        <div class="main-slider__item main-slider__item--slide3">
+          <h1 data-wow-delay="0.7s" class="main-slider__title wow fadeInUp"> Fast & qualitatively </h1>
+          <h2 class="main-slider__subtitle">We make the world's beautiful every day</h2>
+        </div>
+      </div><a href="#projects" class="go-down__link"><i class="fas fa-chevron-down"></i></a>
+    </section>
+    <section id="projects" class="section section__projects">
+      <div class="container">
+        <h3 data-wow-delay="0.3s" class="section__title wow fadeInUp">what we do</h3>
+        <div class="project__item">
+          <div data-wow-delay="0.6s" class="project__img wow fadeInLeft"><img src="img/case1.jpg" alt="img"/></div>
+          <div data-wow-delay="0.6s" class="project__about wow fadeInRight">
+            <div class="project__subtitle">One World</div>
+            <h4 class="project__title">Trade Center</h4>
+            <p class="project__description">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p><a href="#" class="effect button js-popup">more details</a>
+            <div class="project__place"><i class="fas fa-map-marker-alt"> </i>New York City, United States - 1776 feet</div>
+          </div>
+        </div>
+        <div class="project__item project__item--right">
+          <div data-wow-delay="0.6s" class="project__img wow fadeInLeft"><img src="img/case2.jpg" alt="img"/></div>
+          <div data-wow-delay="0.6s" class="project__about wow fadeInRight">
+            <div class="project__subtitle">International</div>
+            <h4 class="project__title">Commerce Centre</h4>
+            <p class="project__description">Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</p><a href="#" class="effect button js-popup">more details</a>
+            <div class="project__place"><i class="fas fa-map-marker-alt"> </i>Hong Kong - 1588 Feet</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="news" data-wow-delay="0.5s" class="section section__news wow fadeInUp"> 
+      <div class="container">
+        <h3 class="section__title section__title--white">latest news</h3>
+        <div class="news-slider owl-carousel owl-theme js-carousel-2">
+          <article class="news-slider__item">
+            <svg class="news-slider__icon">
+              <use xlink:href="img/sprite.svg#news-hover"></use>
+            </svg>
+            <div class="news-slider__image"><img src="img/news-img1.jpg" alt="img"/></div>
+            <div class="news-slider__about">
+              <h4 class="news-slider__title">See The Unmatched Beauty Of The Great.</h4>
+              <p class="news-slider__description">Free directories: directories are perfect for customers that are...</p>
+              <div class="author">
+                <div class="author__ava"><img src="img/news-ava1.jpg" alt="ava"/></div>
+                <div class="author__name">Isaac Dunn</div>
+                <div class="author__post-date">09 Feb 2017</div>
+              </div>
+            </div>
+          </article>
+          <article class="news-slider__item">
+            <svg class="news-slider__icon">
+              <use xlink:href="img/sprite.svg#news-hover"></use>
+            </svg>
+            <div class="news-slider__image"><img src="img/news-img2.jpg" alt="img"/></div>
+            <div class="news-slider__about">
+              <h4 class="news-slider__title">Effective Advertising Pointers.</h4>
+              <p class="news-slider__description">Having a home based business is a wonderful asset to your life...</p>
+              <div class="author">
+                <div class="author__ava"><img src="img/news-ava2.jpg" alt="ava"/></div>
+                <div class="author__name">Dominic Freeman</div>
+                <div class="author__post-date">24 Apr 2017</div>
+              </div>
+            </div>
+          </article>
+          <article class="news-slider__item">
+            <svg class="news-slider__icon">
+              <use xlink:href="img/sprite.svg#news-hover"></use>
+            </svg>
+            <div class="news-slider__image"><img src="img/news-img3.jpg" alt="img"/></div>
+            <div class="news-slider__about">
+              <h4 class="news-slider__title">Hypnotize Yourself Into The Ghost.</h4>
+              <p class="news-slider__description">There are many things that are important to catalog design...</p>
+              <div class="author">
+                <div class="author__ava"><img src="img/news-ava3.jpg" alt="ava"/></div>
+                <div class="author__name">Alice Ward</div>
+                <div class="author__post-date">30 Dec 2017</div>
+              </div>
+            </div>
+          </article>
+          <article class="news-slider__item">
+            <svg class="news-slider__icon">
+              <use xlink:href="img/sprite.svg#news-hover"></use>
+            </svg>
+            <div class="news-slider__image"><img src="img/news-img1.jpg" alt="img"/></div>
+            <div class="news-slider__about">
+              <h4 class="news-slider__title">See The Unmatched Beauty Of The Great.</h4>
+              <p class="news-slider__description">Free directories: directories are perfect for customers that are...</p>
+              <div class="author">
+                <div class="author__ava"><img src="img/news-ava1.jpg" alt="ava"/></div>
+                <div class="author__name">Isaac Dunn</div>
+                <div class="author__post-date">09 Feb 2017</div>
+              </div>
+            </div>
+          </article>
+          <article class="news-slider__item">
+            <svg class="news-slider__icon">
+              <use xlink:href="img/sprite.svg#news-hover"></use>
+            </svg>
+            <div class="news-slider__image"><img src="img/news-img2.jpg" alt="img"/></div>
+            <div class="news-slider__about">
+              <h4 class="news-slider__title">Effective Advertising Pointers.</h4>
+              <p class="news-slider__description">Having a home based business is a wonderful asset to your life...</p>
+              <div class="author">
+                <div class="author__ava"><img src="img/news-ava2.jpg" alt="ava"/></div>
+                <div class="author__name">Dominic Freeman</div>
+                <div class="author__post-date">24 Apr 2017</div>
+              </div>
+            </div>
+          </article>
+          <article class="news-slider__item">
+            <svg class="news-slider__icon">
+              <use xlink:href="img/sprite.svg#news-hover"></use>
+            </svg>
+            <div class="news-slider__image"><img src="img/news-img3.jpg" alt="img"/></div>
+            <div class="news-slider__about">
+              <h4 class="news-slider__title">Hypnotize Yourself Into The Ghost.</h4>
+              <p class="news-slider__description">There are many things that are important to catalog design...</p>
+              <div class="author">
+                <div class="author__ava"><img src="img/news-ava3.jpg" alt="ava"/></div>
+                <div class="author__name">Alice Ward</div>
+                <div class="author__post-date">30 Dec 2017</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="gallery" class="section">
+      <div class="container">
+        <h3 class="section__title section__title--thin">Gallery</h3>
+        <div class="gallery-wrapper">
+          <div class="gallery__big">
+            <svg class="gallery__icon">
+              <use xlink:href="img/sprite.svg#360"></use>
+            </svg>
+            <iframe width="580" height="438" src="https://momento360.com/e/u/109c08cd7c4548b695fab2f6cb8c70f2?utm_campaign=embed&amp;utm_source=other&amp;utm_medium=other&amp;heading=5.525333333333334&amp;pitch=0.6906666666666668&amp;field-of-view=74"></iframe>
+          </div>
+          <div class="gallery__small"><a href="img/gal1.jpg" class="gallery__link"><img src="img/gal1.jpg" alt="" class="gallery__img"/></a><a href="img/gal2.jpg" class="gallery__link"><img src="img/gal2.jpg" alt="" class="gallery__img"/></a><a href="img/gal3.jpg" class="gallery__link"><img src="img/gal3.jpg" alt="" class="gallery__img"/></a><a href="img/gal4.jpg" class="gallery__link"><img src="img/gal4.jpg" alt="" class="gallery__img"/></a></div>
+        </div>
+        <div class="gallery__small gallery__small--hide"><a href="img/gal1.jpg" class="gallery__link"><img src="img/gal1.jpg" alt="" class="gallery__img"/></a><a href="img/gal2.jpg" class="gallery__link"><img src="img/gal2.jpg" alt="" class="gallery__img"/></a><a href="img/gal3.jpg" class="gallery__link"><img src="img/gal3.jpg" alt="" class="gallery__img"/></a><a href="img/gal4.jpg" class="gallery__link"><img src="img/gal4.jpg" alt="" class="gallery__img"/></a></div><a href="#" class="effect button button--center js-gallery_more">see more</a>
+      </div>
+    </section>
+    <section id="contact" class="section section__contacts">
+      <div id="map"></div>
+      <div data-wow-delay="0.4s" class="container container--fly wow fadeInUp">
+        <div class="contacts__wrapper">
+          <h3 class="section__title section__title--thin">get in touch</h3>
+          <ul class="contacts__list">
+            <li class="contacts__item"><i class="fas fa-map-marker-alt"></i>91 Nolan Extensions Suite 670</li>
+            <li class="contacts__item"><i class="fas fa-phone"></i>+001 356-868-2454</li>
+            <li class="contacts__item"><i class="fas fa-inbox"></i>gahuy93@gmail.com</li>
+            <li class="contacts__item"><i class="far fa-clock"></i>From 07:05AM to 19:30PM</li>
+          </ul>
+          <form action="sender.php" method="post" class="contacts__form">
+            <input type="text" name="name" placeholder="Name" class="contacts__input"/>
+            <input type="email" name="email" required="required" placeholder="Email" class="contacts__input"/>
+            <div class="effect contacts__submit">
+              <input type="submit" name="submit" value="Submit" class="button button--short"/>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer__wrapper"><a href="/" class="logo"><img src="img/logo.svg" alt="Logo"/></a>
+        <div class="social"><a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a><a href="#" class="social__link"><i class="fab fa-twitter"></i></a><a href="#" class="social__link"><i class="fab fa-instagram"></i></a></div>
+        <div class="footer__copy">Copyrights © 2020 Monticello Group <span>| </span>Made with <i class="fas fa-heart"></i>by Ga Huy</div>
+      </div>
+    </footer>
+    
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+    <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?&amp;callback=initMap"></script>
+  </body>
+</html>
